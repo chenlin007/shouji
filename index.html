@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+       <link rel="stylesheet" href="css/common.css">
+       <link rel="stylesheet" href="font/demo.css">
+       <link rel="stylesheet" href="font/iconfont.css">
+      
+
+      <script>
+    	window.onload = window.onresize = function(){		 
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+		//找到标签名为html的第一个
+        var _html = document.getElementsByTagName('html')[0];
+		//如果屏幕宽度大于640 
+		//就用 640/16=40
+		//小于640的时候 不确定 也是尺寸/40
+        view_width>640?_html.style.fontSize =640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+		//最大网页尺寸640 
+		//最大字体（根字体大小） 40
+    	}
+	</script>
+    </head>
+    <body>
+    	<div class="header gWidth">
+        	<div class="fenl">
+    			<a href="#" class="iconfont fl shangg ">&#xe60d;</a>
+                <p class="fltext fl">分类</p>
+			</div>
+    			<form class="fl text">
+    				<input type="text" id="fdj" placeholder="输入搜索关键词">
+    				<label for="fdj" class="iconfont fangdajing">&#xe621;</label>
+    			</form>
+
+    			<a href="#" class="iconfont fr">&#xe638;</a>
+    		</div>
+
+            <div class="gWidth banner">
+                <img src="img/banner.gif" alt="">
+            </div>
+            <div class="yaopin gWidth">
+				<img src="img/yaopin.png" alt="">
+            </div>
+            <div class="quanwang gWidth">
+				<h1>全网最低价</h1>
+				<ul>
+					<li class="a1"><p class="q1">【力魂】灵芝益寿胶囊</p><br><p class="q2">￥8.99</p><img src="img/linzhi.png" alt=""></li>
+					<li class="a2"><p class="q1">【永安康健】玛咖<br><span class="q2">￥119.00</span></p><img src="img/yongan.jpg" alt=""></li>
+					<li class="a3"><p class="q1">【金奥力】蜂胶胶囊<br><span class="q2">￥138.00</span></p><img src="img/jingao.jpg" alt=""></li>
+				</ul>
+            </div>
+            <div class="xinma gWidth">
+				<img src="img/xinma.png" alt="">
+            </div>
+           	<div class="daxie gWidth">
+				<h1>答谢恩师</h1>
+				<ul>
+					<li class="a3"><p class="q1">鸿茅药酒（500ml）<br><span class="q2">￥196.00</span></p><img src="img/hongmao.png" alt=""></li>
+					<li class="a1"><p class="q1">【恒诚】<br>跌打榜药酒<br><span class="q2">￥13.80</span></p><img src="img/hengcheng.jpg" alt=""></li>
+					<li class="a2"><p class="q1">【万通】颈痛灵药酒<br><span class="q2">￥25.00</span></p><img src="img/wantong.png" alt=""></li>
+				</ul>
+            </div>
+            <div class="xinyonghu gWidth">
+				<img src="img/xinyonghu.png" alt="">
+            </div>
+            <div class="aimeide gWidth">
+				<h1>美美哒</h1>
+				<ul>					
+					<li class="a1"><p class="q1">【姿美堂】胶原蛋白粉<br><span class="q2">￥89.00</span></p><img src="img/zimei.png" alt=""></li>
+					<li class="a2"><p class="q1">新加坡DRC亮白蚕丝精华液<br><span class="q2">￥15.80</span></p><img src="img/xinjiapo.png" alt=""></li>
+					<li class="a3"><p class="q1">【爱美得】<br>大眼睛睫毛膏<br><span class="q2">￥36.00</span></p><img src="img/aimeide.png" alt=""></li>
+				</ul>
+            </div>
+            <div class="gWidth denglu">
+				<ul>
+					<li class="w1"><a href="#">登录</a></li>
+					<li class="w2"><a href="#">&nbsp;|</a></li>
+					<li class="w1"><a href="#">注册</a></li>
+					<li class="w3"><a href="#">回首页</a><a href="#" class="iconfont fr">&#xe602;</a></li>
+				</ul>
+            </div>
+            <div class="dibu gWidth">
+				<ul class="shang">
+					<li><a href="#">触摸板</a></li>
+					<li><a href="#">&nbsp;|&nbsp;</a></li>
+					<li><a href="#">电脑版</a></li>
+					<li><a href="#">&nbsp;|&nbsp;</a></li>
+					<li><a href="#">APP版</a></li>
+					
+				</ul>
+				<ul class="zhong">
+					<li><a href="#" class="iconfont">&#xe6d8;</a><a href="#">正规药店</a></li>
+					<li><a href="#" class="iconfont">&#xe603;</a><a href="#">提供发票</a></li>
+					<li><a href="#" class="iconfont">&#xe632;</a><a href="#">7天退换货</a></li>
+				</ul>
+				<ul class="xia">
+					<li><a href="#">咨询电话:400-7579-818</a></li>
+				</ul>
+            </div>
+    </body>
+</html>
